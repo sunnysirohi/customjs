@@ -12,7 +12,7 @@ jobs:
         uses: ./
         with:
           who-to-greet: "Sarah"
-      - run: echo "random-number- $RANADOM_NUMBER"
+      - run: echo "random-number- $RANDOM_NUMBER"
         shell: bash
         env:
           RANDOM_NUMBER: ${{steps.foo.outputs.random-number}}
