@@ -9,7 +9,7 @@ outputs:
   random-number:
     description: 'Random Number'
     value: ${{steps.random-number-generator.outputs.random-number}}
-  runs:
+runs:
     using: "composite"
     steps:
       - name: Set Greeting
